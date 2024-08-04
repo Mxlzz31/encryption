@@ -1,0 +1,47 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+
+header {
+    background-color: #0066cc;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+    margin: 0;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+
+.button {
+    display: block;
+    padding: 15px 0;
+    background-color: #0066cc;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #0052a3;
+    transform: translateY(-2px);
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}

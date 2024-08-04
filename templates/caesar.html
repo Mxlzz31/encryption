@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher</title>
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; background-color: #f4f4f4; margin: 0; padding: 20px; display: flex; justify-content: center; align-items: center; min-height: 100vh;">
+    <div style="background-color: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); max-width: 500px; width: 100%;">
+        <h1 style="color: #0066cc; text-align: center; margin-bottom: 20px;">Caesar Cipher</h1>
+        <form method="post" style="display: flex; flex-direction: column;">
+            <label for="caesar_text" style="margin-bottom: 5px;">Text:</label>
+            <input type="text" id="caesar_text" name="caesar_text" required style="padding: 8px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px;">
+            
+            <label for="caesar_shift" style="margin-bottom: 5px;">Shift:</label>
+            <input type="number" id="caesar_shift" name="caesar_shift" required style="padding: 8px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px;">
+            
+            <button type="submit" style="background-color: #0066cc; color: #fff; padding: 10px; border: none; border-radius: 4px; cursor: pointer; transition: background-color 0.3s ease;">Encrypt</button>
+        </form>
+        {% if result %}
+            <div style="margin-top: 30px; background-color: #e9f7ef; padding: 15px; border-radius: 4px;">
+                <h2 style="color: #0066cc; margin-bottom: 10px;">Results</h2>
+                <p style="margin-bottom: 10px;"><strong>Original:</strong> {{ result.original }}</p>
+                <p style="margin-bottom: 10px;"><strong>Encrypted:</strong> {{ result.encrypted }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
